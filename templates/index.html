@@ -1,0 +1,27 @@
+{% extends "base-template.html" %}
+{% block title %}Landing Page{% endblock %}
+{% block content %}
+<div class="container">
+
+  <div class="row">
+    <div class="main-body col-lg-8">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Prediction of PM 2.5</h5>
+          <hr/>
+          <img class="visualization-img" src="{{ url_for('static', filename='images/fig1.png') }}"/>
+          <div class="card-text">
+            <p>The purpose of this project was to analyze the historical data of PM 2.5 and give predictions.</p>
+            <p>
+              After assembling the dummy dataset, we used matplotlib to plot various different durations for PM 2.5 prediction. Factors we looked at included: Within 7 days, Within 15 days, within 30 days and within 60 days.
+              This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    {% include "partials/visualization-sidebar.html" %}
+
+  </div>
+</div>
+{% endblock %}

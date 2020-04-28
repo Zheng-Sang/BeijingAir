@@ -1,0 +1,38 @@
+{% extends "base-template.html" %}
+{% block title %}Comparisons{% endblock %}
+{% block content %}
+  <div class="container">
+
+    <div class="row">
+      <div class="main-body col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Comparison: PM 2.5</h5>
+            <hr/>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="title">Dong Cheng</h6>
+              <img class="comparison-img" src="{{ url_for('static', filename='images/fig1.png') }}"/>
+            </div>
+            <div class="col-md-6">
+                <h6 class="title">Chao Yang</h6>
+                <img class="comparison-img" src="{{ url_for('static', filename='images/fig2.png') }}"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+                <h6 class="title">Xi Cheng</h6>
+              <img class="comparison-img" src="{{ url_for('static', filename='images/fig3.png') }}"/>
+            </div>
+            <div class="col-md-6">
+                <h6 class="title">Hai Dian</h6>
+                <img class="comparison-img" src="{{ url_for('static', filename='images/fig4.png') }}"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
